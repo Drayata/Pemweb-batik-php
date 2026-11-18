@@ -1,24 +1,25 @@
-@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;1,400&display=swap");
 
 :root {
   --deep-espresso: #1e1a17;
   --deep-espresso-dark: #191512;
   --drawer-obsidian: #1c1815;
   --modal-obsidian: #211c18;
-  --warm-taupe: #c4bcb2;
-  --sunlit-alabaster: #f6f2ec;
-  --editorial-ivory: #f5f1eb;
-  --warm-cream: #fdfbf7;
-  --sandstone-card: #e5ddd2;
-  --charcoal-umber: #26211d;
+  --warm-taupe: #aeb4bc;
+  --sunlit-alabaster: #f8f9fb;
+  --editorial-ivory: #ffffff;
+  --warm-cream: #f4f5f7;
+  --sandstone-card: #ffffff;
+  --stone-surface: #eef0f4;
+  --charcoal-umber: #1f2328;
   --sogan-brown: #4a2c11;
   --sogan-brown-light: #5c3a21;
-  --sogan-gold: #a8763e;
+  --sogan-gold: #9a6830;
   --sogan-gold-bright: #d9a86c;
   --turmeric-gold: #d4af37;
   --font-serif: "Cormorant Garamond", Georgia, serif;
   --font-sans:
-    "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+    "Source Sans 3", -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 * {
@@ -212,11 +213,11 @@ a {
 .brand-sub {
   display: block;
   font-family: var(--font-sans);
-  font-size: 0.5625rem;
+  font-size: 0.75rem;
   font-weight: 500;
-  letter-spacing: 0.24em;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.72);
+  color: rgba(255, 255, 255, 0.78);
   margin-top: 0.25rem;
 }
 
@@ -240,12 +241,15 @@ a {
   -webkit-backdrop-filter: blur(6px);
   color: #ffffff;
   font-family: var(--font-sans);
-  font-size: 0.6875rem;
+  font-size: 0.75rem;
   font-weight: 500;
-  letter-spacing: 0.18em;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
   cursor: pointer;
-  transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition:
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-glass:hover {
@@ -263,21 +267,23 @@ a {
 
 .hamburger-lines span {
   display: block;
+  width: 100%;
   height: 1.5px;
   background-color: currentColor;
-  transition: width 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform-origin: left center;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hamburger-lines span:first-child {
-  width: 100%;
+  transform: scaleX(1);
 }
 
 .hamburger-lines span:last-child {
-  width: 66%;
+  transform: scaleX(0.66);
 }
 
 .btn-glass:hover .hamburger-lines span:last-child {
-  width: 100%;
+  transform: scaleX(1);
 }
 
 .arrow-shift {
@@ -316,9 +322,9 @@ a {
 
 .hero-eyebrow {
   display: inline-block;
-  font-size: 0.625rem;
+  font-size: 0.8125rem;
   font-weight: 500;
-  letter-spacing: 0.22em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--sogan-gold-bright);
   margin-bottom: 0.65rem;
@@ -326,10 +332,10 @@ a {
 }
 
 .hero-headline {
-  font-family: var(--font-sans);
-  font-size: 4rem;
-  font-weight: 400;
-  letter-spacing: -0.025em;
+  font-family: var(--font-serif);
+  font-size: 4.25rem;
+  font-weight: 500;
+  letter-spacing: -0.015em;
   line-height: 1.06;
   color: #ffffff;
   text-shadow: 0 4px 24px rgba(25, 21, 18, 0.32);
@@ -356,12 +362,15 @@ a {
   background: rgba(0, 0, 0, 0.15);
   backdrop-filter: blur(6px);
   color: #ffffff;
-  font-size: 0.6875rem;
+  font-size: 0.75rem;
   font-weight: 500;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
   cursor: pointer;
-  transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition:
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-outline-hero:hover {
@@ -382,7 +391,10 @@ a {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition:
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-circle-hero:hover {
@@ -480,12 +492,12 @@ a {
 }
 
 .hero-editorial-copy {
-  max-width: 360px;
-  font-size: 0.8125rem;
-  font-weight: 300;
+  max-width: 390px;
+  font-size: 0.95rem;
+  font-weight: 400;
   letter-spacing: 0.01em;
   line-height: 1.65;
-  color: rgba(255, 255, 255, 0.88);
+  color: rgba(255, 255, 255, 0.9);
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
 }
 
@@ -500,8 +512,8 @@ a {
   backdrop-filter: blur(12px);
   cursor: pointer;
   transition:
-    background 300ms ease,
-    border-color 300ms ease;
+    background-color 250ms ease,
+    border-color 250ms ease;
 }
 
 .craft-media-card:hover {
@@ -682,13 +694,6 @@ a {
   transform: translateX(6px);
 }
 
-.drawer-num {
-  font-family: var(--font-sans);
-  font-size: 0.6875rem;
-  letter-spacing: 0.2em;
-  color: var(--sogan-gold-bright);
-}
-
 .drawer-footer {
   padding-top: 1.5rem;
   border-top: 1px solid rgba(255, 255, 255, 0.12);
@@ -746,23 +751,17 @@ a {
   background: rgba(255, 255, 255, 0.03);
 }
 
-.craft-step-num {
-  font-size: 0.625rem;
-  letter-spacing: 0.22em;
-  color: var(--sogan-gold-bright);
-  text-transform: uppercase;
-}
-
 .craft-step-title {
   font-family: var(--font-serif);
-  font-size: 1.35rem;
-  margin: 0.35rem 0 0.5rem;
+  font-size: 1.4rem;
+  color: var(--sogan-gold-bright);
+  margin: 0 0 0.5rem;
 }
 
 .craft-step-desc {
-  font-size: 0.78rem;
-  color: rgba(255, 255, 255, 0.72);
-  line-height: 1.6;
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.78);
+  line-height: 1.65;
 }
 
 /* ==========================================================================
@@ -787,12 +786,12 @@ a {
 
 .eyebrow-gold {
   display: block;
-  font-size: 0.625rem;
+  font-size: 0.8125rem;
   font-weight: 600;
-  letter-spacing: 0.22em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--sogan-gold);
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.4rem;
 }
 
 .section-title {
@@ -813,11 +812,11 @@ a {
 .input-search,
 .select-filter {
   padding: 0.75rem 1.1rem;
-  border: 1px solid rgba(74, 44, 17, 0.28);
+  border: 1px solid rgba(31, 35, 40, 0.2);
   background: var(--warm-cream);
   color: var(--charcoal-umber);
   font-family: var(--font-sans);
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   min-width: 220px;
   outline: none;
   transition: border-color 200ms ease;
@@ -836,7 +835,7 @@ a {
 
 .product-card {
   background: var(--sandstone-card);
-  border: 1px solid rgba(74, 44, 17, 0.14);
+  border: 1px solid rgba(31, 35, 40, 0.12);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -847,7 +846,7 @@ a {
 
 .product-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 18px 36px rgba(38, 33, 29, 0.1);
+  box-shadow: 0 18px 36px rgba(31, 35, 40, 0.08);
 }
 
 .product-img-wrap {
@@ -876,9 +875,9 @@ a {
   background: rgba(28, 24, 21, 0.85);
   backdrop-filter: blur(6px);
   color: #ffffff;
-  font-size: 0.625rem;
+  font-size: 0.75rem;
   font-weight: 500;
-  letter-spacing: 0.18em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
@@ -891,9 +890,9 @@ a {
 }
 
 .product-motif {
-  font-size: 0.6875rem;
+  font-size: 0.8125rem;
   font-weight: 600;
-  letter-spacing: 0.18em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--sogan-gold);
   margin-bottom: 0.35rem;
@@ -909,15 +908,15 @@ a {
 }
 
 .product-meta {
-  font-size: 0.8rem;
-  color: rgba(38, 33, 29, 0.75);
+  font-size: 0.875rem;
+  color: rgba(31, 35, 40, 0.75);
   margin-bottom: 1rem;
 }
 
 .product-footer {
   margin-top: auto;
   padding-top: 1rem;
-  border-top: 1px solid rgba(38, 33, 29, 0.12);
+  border-top: 1px solid rgba(31, 35, 40, 0.1);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -925,7 +924,7 @@ a {
 }
 
 .product-price {
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   font-weight: 600;
   color: var(--sogan-brown);
 }
@@ -940,14 +939,15 @@ a {
   color: #ffffff;
   border: 1px solid var(--sogan-brown);
   font-family: var(--font-sans);
-  font-size: 0.6875rem;
-  font-weight: 500;
-  letter-spacing: 0.16em;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   cursor: pointer;
   transition:
-    background 250ms ease,
-    color 250ms ease;
+    background-color 250ms ease,
+    color 250ms ease,
+    border-color 250ms ease;
 }
 
 .btn-primary-sogan:hover {
@@ -962,8 +962,8 @@ a {
   background: var(--warm-cream);
   color: var(--charcoal-umber);
   padding: 5.5rem 3rem;
-  border-top: 1px solid rgba(74, 44, 17, 0.16);
-  border-bottom: 1px solid rgba(74, 44, 17, 0.16);
+  border-top: 1px solid rgba(31, 35, 40, 0.1);
+  border-bottom: 1px solid rgba(31, 35, 40, 0.1);
 }
 
 .about-inner {
@@ -988,8 +988,8 @@ a {
 }
 
 .about-story p {
-  font-size: 0.95rem;
-  color: rgba(38, 33, 29, 0.85);
+  font-size: 1rem;
+  color: rgba(31, 35, 40, 0.86);
   margin-bottom: 1.1rem;
   line-height: 1.75;
 }
@@ -1001,7 +1001,7 @@ a {
   margin: 1.75rem 0;
   padding: 1.25rem;
   background: var(--editorial-ivory);
-  border: 1px solid rgba(74, 44, 17, 0.15);
+  border: 1px solid rgba(31, 35, 40, 0.12);
 }
 
 .stat-num {
@@ -1015,25 +1015,24 @@ a {
 
 .stat-label {
   display: block;
-  font-size: 0.72rem;
+  font-size: 0.8125rem;
   font-weight: 500;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: rgba(38, 33, 29, 0.72);
+  color: rgba(31, 35, 40, 0.78);
   margin-top: 0.25rem;
 }
 
 .about-workshop-box {
   padding: 1.1rem 1.25rem;
   background: var(--sandstone-card);
+  border: 1px solid rgba(31, 35, 40, 0.1);
   border-left: 3px solid var(--sogan-gold);
-  font-size: 0.85rem;
+  font-size: 0.9rem;
 }
 
 .about-workshop-box strong {
   display: block;
-  font-size: 0.72rem;
-  letter-spacing: 0.16em;
+  font-size: 0.8125rem;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--sogan-brown);
   margin-bottom: 0.25rem;
@@ -1046,33 +1045,24 @@ a {
 }
 
 .pillar-card {
-  padding: 1.35rem 1.5rem;
+  padding: 1.4rem 1.6rem;
   background: var(--sandstone-card);
-  border: 1px solid rgba(74, 44, 17, 0.14);
+  border: 1px solid rgba(31, 35, 40, 0.12);
   border-left: 3px solid var(--sogan-brown);
-}
-
-.pillar-num {
-  display: block;
-  font-size: 0.625rem;
-  font-weight: 600;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: var(--sogan-gold);
 }
 
 .pillar-title {
   font-family: var(--font-serif);
-  font-size: 1.45rem;
-  font-weight: 500;
+  font-size: 1.5rem;
+  font-weight: 600;
   color: var(--charcoal-umber);
-  margin: 0.2rem 0 0.4rem;
+  margin: 0 0 0.45rem;
 }
 
 .pillar-desc {
-  font-size: 0.85rem;
-  color: rgba(38, 33, 29, 0.78);
-  line-height: 1.6;
+  font-size: 0.925rem;
+  color: rgba(31, 35, 40, 0.82);
+  line-height: 1.65;
 }
 
 .site-footer {
@@ -1267,7 +1257,7 @@ a {
 }
 
 .admin-table tr:hover {
-  background: rgba(229, 221, 210, 0.45);
+  background: rgba(238, 240, 244, 0.75);
 }
 
 .action-link {

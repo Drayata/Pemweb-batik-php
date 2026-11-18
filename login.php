@@ -31,7 +31,7 @@ if (isset($_POST['login'])) {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login Admin &mdash; Pesona Batik Pekalongan</title>
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/style.css?v=<?php echo filemtime('assets/css/style.css'); ?>">
 </head>
 <body class="subpage-body">
   <?php include("menu.php"); ?>

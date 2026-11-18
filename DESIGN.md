@@ -22,10 +22,10 @@ This document defines the complete visual design system, spatial architecture, t
 | **Deep Earth Espresso** | `#1E1A17` / `#191512` | Base canvas background, bottom vignette gradient, and dark surface anchor. |
 | **Drawer Obsidian** | `#1C1815` / `#211C18` | Background surface for the slide-out navigation drawer and modal dialogs. |
 | **Warm Stone Taupe** | `#C4BCB2` | Mid-tone plaster wall color inside the radial studio backdrop. |
-| **Sunlit Alabaster** | `#F6F2EC` | Primary light source highlight behind the central batik centerpiece. |
-| **Editorial Ivory** | `#F5F1EB` | Light-mode background surface for the curated collection section below the fold. |
-| **Sandstone Card Fill** | `#E5DDD2` | Product card container background in the curated collection section. |
-| **Charcoal Umber** | `#26211D` | Primary body and heading typography color on light *Editorial Ivory* surfaces. |
+| **Sunlit Alabaster** | `#F8F9FB` | Primary light source highlight behind the central batik centerpiece. |
+| **Mori Gallery White** | `#FFFFFF` | Crisp bleached *mori primisima* background surface for the curated collection section below the fold. |
+| **Coastal Stone Surface** | `#F4F5F7` | Cool neutral stone surface for secondary sections and controls. |
+| **Charcoal Umber** | `#1F2328` | Primary body and heading typography color on light surfaces. |
 
 ### B. Artisanal Accent & Material Tokens (Batik & Hardware)
 
@@ -75,21 +75,21 @@ The typographic hierarchy pairs an expressive high-contrast editorial serif for 
    * **Usage**: Center header brand wordmark (`ATELIER PEKALONGAN`), section headings, product titles, and navigation drawer links.
    * **Rationale**: High stroke contrast echoes the delicate wax lines drawn by a traditional copper *canting*.
 
-2. **UI & Hero Statement Sans-Serif**: `'Plus Jakarta Sans', Inter, sans-serif`
-   * **Usage**: Primary two-line hero display headline, bordered buttons, micro-labels, bottom-left editorial paragraph, and footer bar.
-   * **Rationale**: Clean, modern geometric proportions create striking tension against traditional Indonesian textile art.
+2. **UI & Body Humanist Sans-Serif**: `'Source Sans 3', -apple-system, BlinkMacSystemFont, sans-serif`
+   * **Usage**: Bordered buttons, UI labels, editorial paragraphs, and footer bar.
+   * **Rationale**: Warm, highly legible humanist proportions designed for long-form reading and functional clarity without generic AI font clichés.
 
 ### B. Typographic Scale & Specifications
 
 | Element | Font Family | Size (Mobile → Desktop) | Weight | Tracking & Line-Height | Case |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **Brand Wordmark** | Cormorant Garamond | `18px` → `26px` | `500` (Medium) | `tracking-[0.18em]` / `leading-none` | Uppercase |
-| **Hero Display Headline (`H1`)** | Plus Jakarta Sans | `36px` (`text-4xl`) → `64px` | `400` (Regular) | `tracking-[-0.025em]` / `leading-[1.06]` | Sentence case |
+| **Hero Display Headline (`H1`)** | Cormorant Garamond | `36px` (`text-4xl`) → `68px` | `500` (Medium) | `tracking-[-0.015em]` / `leading-[1.06]` | Sentence case |
 | **Section Heading (`H2`)** | Cormorant Garamond | `30px` (`text-3xl`) → `48px` (`text-5xl`) | `400` (Regular) | `tracking-tight` / `leading-[1.15]` | Title Case |
 | **Drawer Navigation Links** | Cormorant Garamond | `30px` (`text-3xl`) | `400` (Regular) | `tracking-normal` / `leading-snug` | Title Case |
-| **Editorial Body Copy** | Plus Jakarta Sans | `12px` (`text-xs`) → `13.5px` | `300` (Light) | `tracking-[0.01em]` / `leading-[1.65]` | Sentence case |
-| **UI Buttons & Nav Controls** | Plus Jakarta Sans | `10px` → `11px` | `500` (Medium) | `tracking-[0.18em]` to `0.20em` | Uppercase |
-| **Footer & Eyebrow Micro-Copy** | Plus Jakarta Sans | `9px` → `10px` | `500` (Medium) | `tracking-[0.22em]` | Uppercase |
+| **Editorial Body Copy** | Source Sans 3 | `14px` → `15.2px` | `400` (Regular) | `tracking-[0.01em]` / `leading-[1.65]` | Sentence case |
+| **UI Buttons & Nav Controls** | Source Sans 3 | `12px` | `500` (Medium) | `tracking-[0.14em]` | Uppercase |
+| **Footer & Eyebrow Copy** | Source Sans 3 | `13px` | `600` (SemiBold) | `tracking-[0.10em]` | Uppercase |
 
 ---
 

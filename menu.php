@@ -57,25 +57,21 @@ if (session_status() == PHP_SESSION_NONE) {
     <ul class="drawer-nav">
       <li>
         <a href="index.php#katalog" onclick="toggleDrawer(false)">
-          <span class="drawer-num">01</span>
           <span>Katalog Koleksi Batik</span>
         </a>
       </li>
       <li>
         <a href="index.php#tentang" onclick="toggleDrawer(false)">
-          <span class="drawer-num">02</span>
           <span>Tentang &amp; Warisan Pesisir</span>
         </a>
       </li>
       <li>
         <a href="#proses" onclick="toggleDrawer(false); toggleModal('craft-modal', true); return false;">
-          <span class="drawer-num">03</span>
           <span>Proses Canting &amp; Warna Alam</span>
         </a>
       </li>
       <li>
         <a href="#konsultasi" onclick="toggleDrawer(false); openConsultWithMotif('Jlamprang'); return false;">
-          <span class="drawer-num">04</span>
           <span>Konsultasi Pesanan</span>
         </a>
       </li>
@@ -143,19 +139,16 @@ if (session_status() == PHP_SESSION_NONE) {
 
     <div class="craft-steps-grid">
       <div class="craft-step-card">
-        <span class="craft-step-num">01 &bull; Tahap Awal</span>
         <h4 class="craft-step-title">Nyoret &amp; Canting</h4>
-        <p class="craft-step-desc">Melukis pola di atas kain mori primisima atau sutra menggunakan malam (lilin) panas dan canting tembaga berukir halus untuk membentuk detail isen-isen cecek.</p>
+        <p class="craft-step-desc">Tahap awal melukis pola di atas kain mori primisima atau sutra menggunakan malam (lilin) panas dan canting tembaga berukir halus untuk membentuk detail isen-isen cecek.</p>
       </div>
       <div class="craft-step-card">
-        <span class="craft-step-num">02 &bull; Pewarnaan</span>
         <h4 class="craft-step-title">Medel &amp; Nyoga</h4>
-        <p class="craft-step-desc">Pencelupan berlapis menggunakan pewarna alam soga kayu tingi, jambal, tegeran, serta fermentasi daun tarum (indigo) khas pesisir Pekalongan.</p>
+        <p class="craft-step-desc">Tahap pewarnaan berlapis menggunakan pewarna alam soga kayu tingi, jambal, tegeran, serta fermentasi daun tarum (indigo) khas pesisir Pekalongan.</p>
       </div>
       <div class="craft-step-card">
-        <span class="craft-step-num">03 &bull; Penyelesaian</span>
         <h4 class="craft-step-title">Nglorod</h4>
-        <p class="craft-step-desc">Peluruhan lilin malam dalam air mendidih hingga menampakkan kontras garis motif yang tajam, dilanjutkan penjemuran teduh alami.</p>
+        <p class="craft-step-desc">Tahap penyelesaian berupa peluruhan lilin malam dalam air mendidih hingga menampakkan kontras garis motif yang tajam, dilanjutkan penjemuran teduh alami.</p>
       </div>
     </div>
   </div>

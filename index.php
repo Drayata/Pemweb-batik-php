@@ -223,18 +223,15 @@ $hero_ver = file_exists("assets/img/hero.jpg") ? filemtime("assets/img/hero.jpg"
 
         <div class="about-pillars">
           <div class="pillar-card">
-            <span class="pillar-num">01 &bull; Filosofi Geometris</span>
-            <h4 class="pillar-title">Motif Jlamprang</h4>
+            <h4 class="pillar-title">Motif Jlamprang &mdash; Filosofi Geometris</h4>
             <p class="pillar-desc">Terinspirasi dari tenun patola dan kosmologi bintang teratai, melambangkan keharmonisan hubungan manusia dengan alam semesta.</p>
           </div>
           <div class="pillar-card">
-            <span class="pillar-num">02 &bull; Kekayaan Hayati</span>
-            <h4 class="pillar-title">Motif Tujuh Rupa</h4>
+            <h4 class="pillar-title">Motif Tujuh Rupa &mdash; Kekayaan Hayati</h4>
             <p class="pillar-desc">Memadukan ragam flora dan fauna pesisir dalam sapuan warna cerah sebagai simbol keterbukaan budaya masyarakat pelabuhan Pekalongan.</p>
           </div>
           <div class="pillar-card">
-            <span class="pillar-num">03 &bull; Keanggunan Klasik</span>
-            <h4 class="pillar-title">Motif Buketan Pesisir</h4>
+            <h4 class="pillar-title">Motif Buketan Pesisir &mdash; Keanggunan Klasik</h4>
             <p class="pillar-desc">Rangkaian bunga mekar dengan detail burung hong dan kupu-kupu yang melambangkan kebahagiaan, kemakmuran, serta keanggunan abadi.</p>
           </div>
         </div>
